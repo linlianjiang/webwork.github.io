@@ -258,7 +258,7 @@ text-decoration:none
 		<span><a href="http://www.baidu.com"target="_blank"><span class="STYLE2">联系我们</span></a></span></div>
 <p align="center" class="b">
 <div id="Layer1">
-  <div id="Layer2"><span class="b"><img src="image/图标.png" width="432" height="73" /></span></div>
+  <div id="Layer2"><span class="b"><img src="file:///C|/Users/Administrator/Desktop/无标题.png" width="432" height="77" /></span></div>
   <div id="Layer3"class="content_input">
     <blockquote>
             <input name="text" type="text" class="search_field"placeholder="&#xe672; 请输入查询物品" />
