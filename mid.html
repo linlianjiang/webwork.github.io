@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+<style type="text/css">		
+
+#Layer5 {
+	position:absolute;
+	width:308px;
+	height:173px;
+	z-index:11;
+	left: -3px;
+	top: 2px;
+}
+</style>
+</head>
+
+<body>
+<div id="Layer5"><a href="http://www.baidu.com"target="_blank"><img src="image/1.jpg" alt=""id="imgid" width="300" height="300" /></a></div>
+<script>
+   // 自动切换的广告图片
+    window.onload=rotate;
+    var Adimg=["image/1.jpg","image/2.jpg","image/3.jpg","image/4.jpg"];
+    var adimg=0;
+    function rotate(){
+        adimg++;
+        if(adimg==Adimg.length){
+            adimg=0;
+        }
+        document.getElementById('imgid').src=Adimg[adimg];
+        setTimeout(rotate,4000);
+    }
+
+</script>
+</body>
+</html>
