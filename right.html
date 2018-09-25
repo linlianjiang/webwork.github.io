@@ -2,10 +2,12 @@
   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
-<meta charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+
 <link rel="stylesheet" href="jemdoc.css" type="text/css" />
-<title>Ïæ´ó¶şÊÖ</title>
+<title>æ¹˜å¤§äºŒæ‰‹</title>
 <head>
     <style type="text/css">
  
@@ -66,10 +68,10 @@
     <div class="container">
         <div class="nav">
             <ul class="nav_ul">
-                <li class="select_li">¹«¸æ</li>
-                <li>ÉèÖÃ</li>
-                <li>´òÉÍ</li>
-                <li>¹ã¸æ</li>
+                <li class="select_li">å…¬å‘Š</li>
+                <li>è®¾ç½®</li>
+                <li>æ‰“èµ</li>
+                <li>å¹¿å‘Š</li>
 			
             </ul>
         </div>
@@ -96,7 +98,7 @@
             </div>
             <div>
                 <ul>
-                    <li onclick="window.location.href='https://www.hao123.com/'">µã»÷ÕâÀï</li>
+                    <li onclick="window.location.href='https://www.hao123.com/'">ç‚¹å‡»è¿™é‡Œ</li>
                     <li onclick="window.location.href='https://www.hao123.com/'">a</li>
                     <li onclick="window.location.href='https://www.hao123.com/'">rr</li>
                     <li onclick="window.location.href='https://www.hao123.com/'">yy</li>
@@ -104,10 +106,10 @@
             </div>
             <div>
                 <ul>
-                    <li onclick="window.location.href='https://www.hao123.com/'">¹ã¸æ</li>
-                    <li onclick="window.location.href='https://www.hao123.com/'">¹ã¸æ</li>
-                    <li onclick="window.location.href='https://www.hao123.com/'">¹ã¸æ</li>
-                    <li onclick="window.location.href='https://www.hao123.com/'">¹ã¸æ</li>
+                    <li onclick="window.location.href='https://www.hao123.com/'">å¹¿å‘Š</li>
+                    <li onclick="window.location.href='https://www.hao123.com/'">å¹¿å‘Š</li>
+                    <li onclick="window.location.href='https://www.hao123.com/'">å¹¿å‘Š</li>
+                    <li onclick="window.location.href='https://www.hao123.com/'">å¹¿å‘Š</li>
                 </ul>
             </div>
         </div>
@@ -117,15 +119,15 @@
         var liList=document.querySelector('.nav_ul').querySelectorAll('li');
         var divList=document.querySelector('.content').querySelectorAll('div');
         var timer=null;
-        // Ã¿Ò»¸öliÊó±ê½øÈëÊÂ¼ş
+        // æ¯ä¸€ä¸ªlié¼ æ ‡è¿›å…¥äº‹ä»¶
         for(var index=0;index<liList.length;index++){
-    //        ×ÔÖ´ĞĞº¯ÊıÔÚÒ»Ğ´Íê¡¢Ò»°ó¶¨µÄÊ±ºò£¬²»ĞèÒª´¥·¢¾ÍÖ´ĞĞ
-    //        ×ÔÖ´ĞĞº¯Êı·µ»Øfunction£¬Êµ¼ÊÉÏ µ±Êó±ê½øÈëÊ±Êµ¼ÊÉÏÖ´ĞĞµÄÊÇ·µ»ØµÄº¯Êı
+    //        è‡ªæ‰§è¡Œå‡½æ•°åœ¨ä¸€å†™å®Œã€ä¸€ç»‘å®šçš„æ—¶å€™ï¼Œä¸éœ€è¦è§¦å‘å°±æ‰§è¡Œ
+    //        è‡ªæ‰§è¡Œå‡½æ•°è¿”å›functionï¼Œå®é™…ä¸Š å½“é¼ æ ‡è¿›å…¥æ—¶å®é™…ä¸Šæ‰§è¡Œçš„æ˜¯è¿”å›çš„å‡½æ•°
             liList[index].onmouseenter= (function (selectIndex) {
                 return function () {
-                    //Ôö¼ÓÑÓ³ÙÊÂ¼ş
+                    //å¢åŠ å»¶è¿Ÿäº‹ä»¶
                     timer=setTimeout(function () {
-                        //Çå³ıËùÓĞÑùÊ½ li ÏÔÊ¾ÏàÓ¦divÖĞµÄul ÑùÊ½Ò²È¥µô
+                        //æ¸…é™¤æ‰€æœ‰æ ·å¼ li æ˜¾ç¤ºç›¸åº”divä¸­çš„ul æ ·å¼ä¹Ÿå»æ‰
                         for(var i=0;i<liList.length;i++){
                             liList[i].removeAttribute('class');
                             divList[i].removeAttribute('class');
@@ -135,7 +137,7 @@
                     },600);
                 };
             }(index));
-    //        Ìí¼ÓÊó±êÒÆ³öÊÂ¼ş£¬±£Ö¤Àë¿ªµÄÊ±ºòÇå³ıÑÓ³ÙÆ÷£¬²»Ó°ÏìÏÂÒ»´Î²Ù×÷
+    //        æ·»åŠ é¼ æ ‡ç§»å‡ºäº‹ä»¶ï¼Œä¿è¯ç¦»å¼€çš„æ—¶å€™æ¸…é™¤å»¶è¿Ÿå™¨ï¼Œä¸å½±å“ä¸‹ä¸€æ¬¡æ“ä½œ
             liList[index].onmouseleave = function (eve) {
                 clearTimeout(timer);
             };
