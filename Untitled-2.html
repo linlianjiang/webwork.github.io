@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+ .testClass{
+	position: absolute;
+	width: 200px;
+	height: 115px;
+	z-index: 1;
+	left: 429px;
+	top: 50px;
+	background-image: url(img1/2.jpg);
+}
+</style>
+</head>
+<script type="text/javascript">
+        function ChangeDivShow(imgObj)
+        {
+            var divObj = document.getElementById("testId");
+ 			var clickNum=0;
+			
+            //这里的判断的很巧妙，以div的display为因 去改变 显示的图片
+            //还可以有另外一种方法就是 以img的src为因 去改变 div的display。
+            //显然第一种更加优秀！
+            //程序 逻辑 思维 选择 不实践 不出真章！
+ 
+ 			document.imgObj.onclick=function(){
+       		clickNum++;
+			
+            if(divObj.style.display=="none")
+            {
+                divObj.style.display = "block";
+                
+            }
+            else
+            {
+                divObj.style.display = "none";
+                
+            }
+			}
+        }
+    </script>
+<body>
+<img src="images/block.jpg" onclick="ChangeDivShow(this)" />
+
+<div class="testClass" id="testId" style="display:none;">
+</body>
+</html>
