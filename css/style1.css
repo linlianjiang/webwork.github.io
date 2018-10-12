@@ -315,8 +315,11 @@
 }
 /*nav*/
 .nav{
+	position:absolute
+	
 	width: 100%;
 	height: 41px;
+	
 	line-height: 38px;
 	font-weight: bold;
 	font-size: 16px;
@@ -329,10 +332,10 @@
 .STYLE3 {color: #FFFFFF}
 .apDiv {
 	position: absolute;
-	width: 880px;
+	width: 76.5%;
 	height: 43px;
 	z-index: 3;
-	left: 238px;
+	/*left: 238px;*/
 	top: 169px;
 	background: -o-linear-gradient(right, #FFA000,red);
 	background: -moz-linear-gradient(right,#FFA000,red);
@@ -568,6 +571,7 @@
 /***********************tabs***********************/
 /*tab-nav*/
 .tab-nav{
+	
     margin-left: -1px;
     width: 100%;
     height: 27px;
